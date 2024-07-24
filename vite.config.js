@@ -5,6 +5,6 @@ export default defineConfig({
   plugins: [react()],
   build: {
     outDir: "public", // Output directory
-    index: "index.html", // Index file name
+    index: "./public/index.html", // Index file name
   },
 });
