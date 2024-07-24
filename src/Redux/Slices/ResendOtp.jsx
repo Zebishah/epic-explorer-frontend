@@ -45,7 +45,7 @@ export const resendOTP = (otp) => async (dispatch, getState) => {
     const email = await selectOtpEmail(getState());
 
     const response = await axios.post(
-      `http://localhost:5000/User/verifyOTP`,
+      `https://epic-explorer-backend.vercel.app/User/verifyOTP`,
       { otp, email }, // Include email in the request payload
       {
         headers: {

@@ -45,7 +45,7 @@ const HotelRequestBalance = () => {
     console.log(SecretSeed);
     try {
       const response = await axios.post(
-        `http://localhost:5000/Room/RoomPayment/${id}`,
+        `https://epic-explorer-backend.vercel.app/Room/RoomPayment/${id}`,
         { amount: amount.toString(), SecretSeed },
         {
           headers: {
