@@ -4,7 +4,7 @@ import react from "@vitejs/plugin-react";
 export default defineConfig({
   plugins: [react()],
   build: {
-    outDir: "public", // Output directory
-    index: "./public/index.html", // Index file name
+    outDir: "public",
+    entry: "./public/index.html", // Specify the entry point
   },
 });
