@@ -49,7 +49,7 @@ export const updateUser = (formData) => async (dispatch) => {
 
   try {
     const response = await axios.post(
-      `http://localhost:5000/User/updateUser`,
+      `https://epic-explorer-backend.vercel.app/User/updateUser`,
       {
         fullName: formData.fullName,
         address: formData.address,
@@ -82,7 +82,7 @@ export const getUserFavorite = () => async (dispatch) => {
 
   try {
     const response = await axios.post(
-      `http://localhost:5000/UserFavrt/getUserFavorite`,
+      `https://epic-explorer-backend.vercel.app/UserFavrt/getUserFavorite`,
       {},
       {
         headers: {
