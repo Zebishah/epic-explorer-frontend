@@ -112,7 +112,7 @@ export const userTourBookings = () => async (dispatch) => {
 
   try {
     const response = await axios.post(
-      `https://epic-explorer-backend.vercel.app/User/TourHistory`,
+      `http://localhost:5000/User/TourHistory`,
       {},
       {
         headers: {
@@ -138,7 +138,7 @@ export const userHotelBookings = () => async (dispatch) => {
 
   try {
     const response = await axios.post(
-      `https://epic-explorer-backend.vercel.app/User/HotelHistory`,
+      `http://localhost:5000/User/HotelHistory`,
       {},
       {
         headers: {
@@ -164,7 +164,7 @@ export const userTransportBooking = () => async (dispatch) => {
 
   try {
     const response = await axios.post(
-      `https://epic-explorer-backend.vercel.app/User/TransportHistory`,
+      `http://localhost:5000/User/TransportHistory`,
       {},
       {
         headers: {
@@ -190,7 +190,7 @@ export const userTourPayment = () => async (dispatch) => {
 
   try {
     const response = await axios.post(
-      `https://epic-explorer-backend.vercel.app/Bill/getUserTourBill`,
+      `http://localhost:5000/Bill/getUserTourBill`,
       {},
       {
         headers: {
@@ -216,7 +216,7 @@ export const userHotelPayment = () => async (dispatch) => {
 
   try {
     const response = await axios.post(
-      `https://epic-explorer-backend.vercel.app/Bill/getUserHotelBill`,
+      `http://localhost:5000/Bill/getUserHotelBill`,
       {},
       {
         headers: {
@@ -242,7 +242,7 @@ export const userTransportPayment = () => async (dispatch) => {
 
   try {
     const response = await axios.post(
-      `https://epic-explorer-backend.vercel.app/Bill/getUserTransportBill`,
+      `http://localhost:5000/Bill/getUserTransportBill`,
       {},
       {
         headers: {
@@ -268,7 +268,7 @@ export const tourBookingDetail = (id) => async (dispatch) => {
   console.log(id);
   try {
     const response = await axios.post(
-      `https://epic-explorer-backend.vercel.app/Tour/searchTour`,
+      `http://localhost:5000/Tour/searchTour`,
       { id },
       {
         headers: {
@@ -293,7 +293,7 @@ export const HotelBookingDetail = (id) => async (dispatch) => {
 
   try {
     const response = await axios.post(
-      `https://epic-explorer-backend.vercel.app/Room/searchRoomById`,
+      `http://localhost:5000/Room/searchRoomById`,
       { id },
       {
         headers: {
@@ -318,7 +318,7 @@ export const transportBookingDetail = (id) => async (dispatch) => {
 
   try {
     const response = await axios.post(
-      `https://epic-explorer-backend.vercel.app/Transport/searchTransportById`,
+      `http://localhost:5000/Transport/searchTransportById`,
       { id },
       {
         headers: {
@@ -342,7 +342,7 @@ export const tourPaymentDetail = (id) => async (dispatch) => {
 
   try {
     const response = await axios.post(
-      `https://epic-explorer-backend.vercel.app/Bill/searchTourBillFId`,
+      `http://localhost:5000/Bill/searchTourBillFId`,
       { id },
       {
         headers: {
@@ -366,7 +366,7 @@ export const HotelPaymentDetail = (id) => async (dispatch) => {
 
   try {
     const response = await axios.post(
-      `https://epic-explorer-backend.vercel.app/Bill/searchHotelBillFId`,
+      `http://localhost:5000/Bill/searchHotelBillFId`,
       { id },
       {
         headers: {
@@ -390,7 +390,7 @@ export const transportPaymentDetail = (id) => async (dispatch) => {
 
   try {
     const response = await axios.post(
-      `https://epic-explorer-backend.vercel.app/Bill/searchTransportBillFId`,
+      `http://localhost:5000/Bill/searchTransportBillFId`,
       { id },
       {
         headers: {

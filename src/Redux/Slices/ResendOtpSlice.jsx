@@ -41,7 +41,7 @@ export const resendOtp = (email) => async (dispatch) => {
 
   try {
     const response = await axios.post(
-      `https://epic-explorer-backend.vercel.app/User/resendOtp`,
+      `http://localhost:5000/User/resendOtp`,
       { email },
       {
         headers: {

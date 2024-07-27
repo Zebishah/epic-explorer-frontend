@@ -67,7 +67,7 @@ export const BookingsTour = (
 
   try {
     const response = await axios.post(
-      `https://epic-explorer-backend.vercel.app/Tour/getFormData/${id}`,
+      `http://localhost:5000/Tour/getFormData/${id}`,
       {
         bookerName,
         bookerEmail,
@@ -115,7 +115,7 @@ export const BookingsTransport = (
 
   try {
     const response = await axios.post(
-      `https://epic-explorer-backend.vercel.app/Transport/getTransportFormData/${id}`,
+      `http://localhost:5000/Transport/getTransportFormData/${id}`,
       {
         bookerName,
         bookerEmail,
@@ -163,7 +163,7 @@ export const BookingsHotel = (
 
   try {
     const response = await axios.post(
-      `https://epic-explorer-backend.vercel.app/Room/getFormData/${id}`,
+      `http://localhost:5000/Room/getFormData/${id}`,
       {
         bookerName,
         bookerEmail,

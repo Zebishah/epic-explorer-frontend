@@ -47,7 +47,7 @@ export const signUp = ({
   dispatch(signUpRequest());
   try {
     const response = await axios.post(
-      `https://epic-explorer-backend.vercel.app/User/createUser`,
+      `http://localhost:5000/User/createUser`,
       { userName, email, password, confirmPassword, googleSign },
       {
         headers: {

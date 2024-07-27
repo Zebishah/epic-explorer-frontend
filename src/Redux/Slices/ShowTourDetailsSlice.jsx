@@ -144,7 +144,7 @@ export const showTourDetail = (id) => async (dispatch) => {
   if (id) {
     try {
       const response = await axios.post(
-        `https://epic-explorer-backend.vercel.app/Tour/openTour/${id}`,
+        `http://localhost:5000/Tour/openTour/${id}`,
         {},
         {
           headers: {
@@ -171,7 +171,7 @@ export const getTourDetail = () => async (dispatch) => {
 
   try {
     const response = await axios.post(
-      `https://epic-explorer-backend.vercel.app/User/getUserInfo`,
+      `http://localhost:5000/User/getUserInfo`,
       {},
       {
         headers: {
@@ -199,7 +199,7 @@ export const showRoomDetail = (id) => async (dispatch) => {
 
   try {
     const response = await axios.post(
-      `https://epic-explorer-backend.vercel.app/Room/openRoom/${id}`,
+      `http://localhost:5000/Room/openRoom/${id}`,
       {},
       {
         headers: {
@@ -225,7 +225,7 @@ export const showTransportDetail = (id) => async (dispatch) => {
 
   try {
     const response = await axios.post(
-      `https://epic-explorer-backend.vercel.app/Transport/openTransport/${id}`,
+      `http://localhost:5000/Transport/openTransport/${id}`,
       {},
       {
         headers: {
@@ -251,7 +251,7 @@ export const showRelatedTours = ({ id }) => async (dispatch) => {
   id = id.toString();
   try {
     const response = await axios.post(
-      `https://epic-explorer-backend.vercel.app/Tour/RelatedTour`,
+      `http://localhost:5000/Tour/RelatedTour`,
       { id },
       {
         headers: {
@@ -275,7 +275,7 @@ export const showRelatedHotels = ({ id }) => async (dispatch) => {
   id = id.toString();
   try {
     const response = await axios.post(
-      `https://epic-explorer-backend.vercel.app/Room/RelatedRoom`,
+      `http://localhost:5000/Room/RelatedRoom`,
       { id },
       {
         headers: {
@@ -299,7 +299,7 @@ export const showRelatedTransport = ({ id }) => async (dispatch) => {
   id = id.toString();
   try {
     const response = await axios.post(
-      `https://epic-explorer-backend.vercel.app/Transport/RelatedTransport`,
+      `http://localhost:5000/Transport/RelatedTransport`,
       { id },
       {
         headers: {
@@ -323,7 +323,7 @@ export const showRelatedBlogs = ({ id }) => async (dispatch) => {
   id = id.toString();
   try {
     const response = await axios.post(
-      `https://epic-explorer-backend.vercel.app/Blog/getTourBlog`,
+      `http://localhost:5000/Blog/getTourBlog`,
       { id },
       {
         headers: {
@@ -347,7 +347,7 @@ export const showTourReviews = ({ id }) => async (dispatch) => {
   id = id.toString();
   try {
     const response = await axios.post(
-      `https://epic-explorer-backend.vercel.app/Review/getTourReviews`,
+      `http://localhost:5000/Review/getTourReviews`,
       { id },
       {
         headers: {
@@ -371,7 +371,7 @@ export const showHotelReviews = ({ id }) => async (dispatch) => {
 
   try {
     const response = await axios.post(
-      `https://epic-explorer-backend.vercel.app/Review/getHotelReviews`,
+      `http://localhost:5000/Review/getHotelReviews`,
       { id },
       {
         headers: {
@@ -395,7 +395,7 @@ export const showExtraPDetail = (id) => async (dispatch) => {
 
   try {
     const response = await axios.post(
-      `https://epic-explorer-backend.vercel.app/User/extraPaymentDetail`,
+      `http://localhost:5000/User/extraPaymentDetail`,
       { id },
       {
         headers: {
@@ -419,7 +419,7 @@ export const showExtraHDetail = (id) => async (dispatch) => {
 
   try {
     const response = await axios.post(
-      `https://epic-explorer-backend.vercel.app/User/extraHPaymentDetail`,
+      `http://localhost:5000/User/extraHPaymentDetail`,
       { id },
       {
         headers: {
@@ -443,7 +443,7 @@ export const showExtraTDetail = (id) => async (dispatch) => {
 
   try {
     const response = await axios.post(
-      `https://epic-explorer-backend.vercel.app/User/extraTPaymentDetail`,
+      `http://localhost:5000/User/extraTPaymentDetail`,
       { id },
       {
         headers: {
@@ -467,7 +467,7 @@ export const showTransportReviews = ({ id }) => async (dispatch) => {
   id = id.toString();
   try {
     const response = await axios.post(
-      `https://epic-explorer-backend.vercel.app/Review/getTransportReviews`,
+      `http://localhost:5000/Review/getTransportReviews`,
       { id },
       {
         headers: {
@@ -494,7 +494,7 @@ export const addReviews = ({ id }, name, email, words, rating) => async (
   const token = localStorage.getItem("jwtToken");
   try {
     const response = await axios.post(
-      `https://epic-explorer-backend.vercel.app/Review/addReviews`,
+      `http://localhost:5000/Review/addReviews`,
       { id, name, email, words, rating },
       {
         headers: {
@@ -522,7 +522,7 @@ export const showCustomTour = (tourLocation, membersLimit, days) => async (
 
   try {
     const response = await axios.post(
-      `https://epic-explorer-backend.vercel.app/Tour/customizedTour`,
+      `http://localhost:5000/Tour/customizedTour`,
       { tourLocation, membersLimit, days },
       {
         headers: {

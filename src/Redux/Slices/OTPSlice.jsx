@@ -43,7 +43,7 @@ export const otpSender = (otp) => async (dispatch, getState) => {
 
   try {
     const response = await axios.post(
-      `https://epic-explorer-backend.vercel.app/User/verifyOTP`,
+      `http://localhost:5000/User/verifyOTP`,
       { otp, email },
       {
         headers: {

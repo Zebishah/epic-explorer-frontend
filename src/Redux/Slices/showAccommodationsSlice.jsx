@@ -122,7 +122,7 @@ export const showTours = () => async (dispatch) => {
 
   try {
     const response = await axios.get(
-      `https://epic-explorer-backend.vercel.app/Tour/showTour`,
+      `http://localhost:5000/Tour/showTour`,
       {},
       {
         headers: {
@@ -146,7 +146,7 @@ export const showBlogs = () => async (dispatch) => {
 
   try {
     const response = await axios.get(
-      `https://epic-explorer-backend.vercel.app/Blog/getBlog`,
+      `http://localhost:5000/Blog/getBlog`,
       {},
       {
         headers: {
@@ -171,7 +171,7 @@ export const showBlogsById = (id) => async (dispatch) => {
 
   try {
     const response = await axios.post(
-      `https://epic-explorer-backend.vercel.app/Blog/getBlogById`,
+      `http://localhost:5000/Blog/getBlogById`,
       { id },
       {
         headers: {
@@ -198,7 +198,7 @@ export const contactMessage = (firstName, lastName, email, message) => async (
   let token = localStorage.getItem("jwtToken");
   try {
     const response = await axios.post(
-      `https://epic-explorer-backend.vercel.app/User/contactUs`,
+      `http://localhost:5000/User/contactUs`,
       { firstName, lastName, email, message },
       {
         headers: {
@@ -224,7 +224,7 @@ export const showDiscountedTours = () => async (dispatch) => {
 
   try {
     const response = await axios.get(
-      `https://epic-explorer-backend.vercel.app/Tour/DiscountedTours`,
+      `http://localhost:5000/Tour/DiscountedTours`,
       {},
       {
         headers: {
@@ -249,7 +249,7 @@ export const showHotels = () => async (dispatch) => {
 
   try {
     const response = await axios.get(
-      `https://epic-explorer-backend.vercel.app/Hotel/showHotel`,
+      `http://localhost:5000/Hotel/showHotel`,
       {},
       {
         headers: {
@@ -273,7 +273,7 @@ export const showTransport = () => async (dispatch) => {
 
   try {
     const response = await axios.get(
-      `https://epic-explorer-backend.vercel.app/Transport/showTransport`,
+      `http://localhost:5000/Transport/showTransport`,
       {},
       {
         headers: {
@@ -298,7 +298,7 @@ export const showRooms = (id) => async (dispatch) => {
   console.log(id);
   try {
     const response = await axios.post(
-      `https://epic-explorer-backend.vercel.app/Hotel/showHotelRooms`,
+      `http://localhost:5000/Hotel/showHotelRooms`,
       { id },
       {
         headers: {
@@ -321,7 +321,7 @@ export const showAllRooms = () => async (dispatch) => {
   dispatch(userSearchRequest());
   try {
     const response = await axios.get(
-      `https://epic-explorer-backend.vercel.app/Room/showRooms`,
+      `http://localhost:5000/Room/showRooms`,
       {},
       {
         headers: {
@@ -345,7 +345,7 @@ export const searchTours = () => async (dispatch) => {
 
   try {
     const response = await axios.get(
-      `https://epic-explorer-backend.vercel.app/Tour/searchTourByName`,
+      `http://localhost:5000/Tour/searchTourByName`,
       {},
       {
         headers: {
@@ -375,7 +375,7 @@ export const showFilterTours = (
   console.log(name);
   try {
     const response = await axios.post(
-      `https://epic-explorer-backend.vercel.app/Tour/filterTour`,
+      `http://localhost:5000/Tour/filterTour`,
       { type, price, membersLimit, tourLocation, name },
       {
         headers: {
@@ -405,7 +405,7 @@ export const showFilterRoom = (
   console.log(name);
   try {
     const response = await axios.post(
-      `https://epic-explorer-backend.vercel.app/Room/RoomFilters`,
+      `http://localhost:5000/Room/RoomFilters`,
       { type, prices, noOfGuests, location, name },
       {
         headers: {
@@ -436,7 +436,7 @@ export const showFilterTransport = (
 
   try {
     const response = await axios.post(
-      `https://epic-explorer-backend.vercel.app/Transport/filterTransport`,
+      `http://localhost:5000/Transport/filterTransport`,
       { type, prices, allowedGuests, seats, carName },
       {
         headers: {
@@ -460,7 +460,7 @@ export const pagination = (page, perPage) => async (dispatch) => {
 
   try {
     const response = await axios.post(
-      `https://epic-explorer-backend.vercel.app/Tour/perPageTours`,
+      `http://localhost:5000/Tour/perPageTours`,
       { page, perPage },
       {
         headers: {

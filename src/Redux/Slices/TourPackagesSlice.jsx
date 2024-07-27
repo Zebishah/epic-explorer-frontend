@@ -56,7 +56,7 @@ export const showTourPackages = () => async (dispatch) => {
 
   try {
     const response = await axios.get(
-      `https://epic-explorer-backend.vercel.app/Tour/TourPackages`,
+      `http://localhost:5000/Tour/TourPackages`,
       {},
       {
         headers: {
@@ -80,7 +80,7 @@ export const showLatestTours = () => async (dispatch) => {
 
   try {
     const response = await axios.get(
-      `https://epic-explorer-backend.vercel.app/Tour/LatestTour`,
+      `http://localhost:5000/Tour/LatestTour`,
       {},
       {
         headers: {
@@ -104,7 +104,7 @@ export const showReviewStart = () => async (dispatch) => {
 
   try {
     const response = await axios.get(
-      `https://epic-explorer-backend.vercel.app/Review/getReviews`,
+      `http://localhost:5000/Review/getReviews`,
       {},
       {
         headers: {
