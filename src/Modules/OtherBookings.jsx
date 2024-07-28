@@ -21,6 +21,7 @@ const OtherBookings = () => {
           <div className="absolute inset-0 ">
             <img
               src={backgroundImage}
+              alt="....."
               className="object-cover w-full h-full bg-center"
             />
             <div className="absolute inset-0 bg-black opacity-50" />
