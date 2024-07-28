@@ -31,7 +31,7 @@ const Reviews = () => {
       <h1 className="text-white text-lg smd:text-5xl font-joining bg-[#206eff] p-6 rounded-lg shadow-lg shadow-fade-black">
         Reviews
       </h1>
-      <div className="flex flex-col justify-center items-center space-y-10 h-screen p-12 w-[100%] smd:w-[80%]">
+      <div className="flex flex-col justify-center items-center space-y-10 h-auto p-12 w-[100%] smd:w-[80%]">
         {Reviews.map((review, index) => (
           <div
             className="bg-[#206eff] bg-center bg-cover border-2 border-[#3654ff] p-8 rounded-xl shadow-lg shadow-fade-black"
@@ -40,7 +40,7 @@ const Reviews = () => {
               backgroundImage: `url(${image2})`,
             }}
           >
-            <div className="flex flex-row items-center mb-4 gap-x-4">
+            <div className="flex flex-col items-center mb-4 lg:flex-row gap-x-4">
               <div className="mr-4 overflow-hidden rounded-full">
                 <img
                   src={review.image ? review.image : image}

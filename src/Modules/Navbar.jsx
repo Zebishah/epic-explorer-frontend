@@ -60,9 +60,9 @@ const Navbar = () => {
   }, [userFrTokenData, dispatch]);
 
   return (
-    <div className="z-20 flex flex-col w-screen gap-y-1">
+    <div className="z-20 flex flex-col w-full gap-y-1 ">
       <ToastContainer />
-      <nav className="hidden smd:flex flex-col smd:flex-row gap-y-4 justify-center lg:gap-x-44 smd:gap-x-10 py-4 px-4 bg-[#ffffffd5] opacity-100  w-full fixed top-0 left-0 right-0 z-10">
+      <nav className="  hidden smd:flex flex-col smd:flex-row gap-y-4 justify-center lg:gap-x-36 smd:gap-x-10 py-4 px-4 bg-[#ffffffd5] opacity-100  w-full fixed top-0 left-0 right-0 z-10">
         <Link to={"/"}>
           <div className="flex items-center justify-center">
             <img
@@ -121,7 +121,7 @@ const Navbar = () => {
             alt="Store Logo"
           />
         </div>
-        <div className="items-center hidden md:flex lg:space-x-12 sm:space-x-4">
+        <div className="items-center hidden md:flex lg:space-x-9 sm:space-x-4">
           <Link
             to={"/"}
             className="font-radios p-2 rounded-xl hover:shadow-lg hover:shadow-fade-black flex lg:text-[14px] md:text-[12px] text-[#3654ff] cursor-pointer duration-300 hover:bg-[#3654ff] hover:text-white transition-all ease-in-out  "
@@ -236,7 +236,7 @@ const Navbar = () => {
               className="font-radios p-2 rounded-xl flex cursor-pointer hover:shadow-lg hover:bg-[#3654ff] hover:shadow-fade-black duration-300 font-semibold text-[#3654ff] hover:text-white sssm:text-sm lg:text-[14px] md:text-[12px] transition-all ease-in-out"
             >
               {" "}
-              <div className="flex flex-row items-center justify-center gap-x-1 hover:text-white ">
+              <div className="flex-row items-center justify-center hidden lg:flex gap-x-1 hover:text-white ">
                 <div className="mr-4 overflow-hidden rounded-full ">
                   <img
                     src={imageReal !== " " ? imageReal : image}

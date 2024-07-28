@@ -21,13 +21,13 @@ const LandingPage = () => {
 
   return (
     <div
-      className="flex flex-col bg-white bg-center gap-y-10"
+      className="flex flex-col w-screen bg-white bg-center gap-y-24 lg:gap-y-10 "
       style={{
         backgroundImage: `url(${image2})`,
       }}
     >
       <div
-        className="flex flex-col items-center justify-center h-screen text-white bg-center bg-no-repeat bg-cover"
+        className="flex flex-col items-center justify-center w-full h-screen text-white bg-center bg-no-repeat bg-cover"
         style={{
           backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(${image1})`,
         }}

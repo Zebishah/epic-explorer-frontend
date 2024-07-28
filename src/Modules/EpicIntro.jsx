@@ -7,7 +7,7 @@ import { TbBrandBooking } from "react-icons/tb";
 const EpicIntro = () => {
   return (
     <>
-      <div className="flex flex-row gap-x-8 justify-center items-center bg-[#255fff] w-full p-6 -mt-24 ">
+      <div className="hidden lg:flex flex-row gap-x-8 justify-center items-center bg-[#255fff] w-full p-6 -mt-24 ">
         <div className="flex items-center justify-center p-3 gap-x-3">
           <RiMapPin2Fill className="text-white" size={40} />
           <h3 className="text-lg text-white font-radios">50+ Destinations</h3>
@@ -31,7 +31,7 @@ const EpicIntro = () => {
       </div>
 
       <div
-        className="flex flex-col items-center justify-center h-screen space-x-2 bg-center bg-no-repeat bg-cover md:space-y-8 smd:space-y-28 sssm:space-y-2"
+        className="flex flex-col items-center justify-center w-full h-auto space-x-2 bg-center bg-no-repeat bg-cover md:space-y-8 smd:space-y-28 sssm:space-y-2"
         // style={{
         //   backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(${image2})`,
         // }}

@@ -68,75 +68,86 @@ import CustomizeTours from "./Modules/CustomizeTours";
 import ChatBot from "./Modules/ChatBot";
 function App() {
   return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/chatbot" element={<ChatBot />} />
-        <Route path="/CustomizeTours" element={<CustomizeTours />} />
-        <Route path="/HotelTicket" element={<HotelTicket />} />
-        <Route path="/hotelPayment" element={<HotelRequestBalance />} />
-        <Route path="/TransportPayment" element={<RequestTransportBalance />} />
-        <Route path="/TransportTicket" element={<TransportTicket />} />
-        <Route path="/BookHotel" element={<BookHotel />} />
-        <Route path="/ViewBlog" element={<ViewBlog />} />
-        <Route path="/discountedTour" element={<DiscountedTours />} />
-        <Route path="/HoneyMoonPackages" element={<HoneyMoonPackages />} />
-        <Route path="/AllTransport" element={<AllTransport />} />
-        <Route path="/allRooms" element={<Room />} />
-        <Route path="/AllRoom" element={<AllRoom />} />
-        <Route path="/AllHotels" element={<AllHotels />} />
-        <Route path="/PersonalPackages" element={<PersonalPackage />} />
-        <Route path="/FamilyTours" element={<FamilyPackage />} />
-        <Route path="/AllTourPackages" element={<AllTourPackages />} />
-        <Route path="/TransportPaymentDet" element={<TransportPaymentDet />} />
-        <Route path="/HotelPaymentDet" element={<HotelPaymentDet />} />
-        <Route path="/TourPaymentDet" element={<TourPaymentDet />} />
-        <Route path="/TransportBookingDet" element={<TransportBookingDet />} />
-        <Route path="/HotelBookingDet" element={<HotelBookingDet />} />
-        <Route path="/TourBookingDet" element={<TourBookingDet />} />
-        <Route path="/ToursPayments" element={<TourPayments />} />
-        <Route path="/HotelsPayments" element={<HotelPayments />} />
-        <Route path="/TransportsPayments" element={<TransportPayments />} />
-        <Route path="/PaymentOptions" element={<PaymentOptions />} />
-        <Route path="/indOtp" element={<IndependentOTP />} />
-        <Route path="/UpdatePassword" element={<UpdatePassword />} />
-        <Route path="/ResetPassword" element={<ForgetPassword />} />
-        <Route path="/tourBooked" element={<TourBookings />} />
-        <Route path="/transportBooked" element={<TransportBookings />} />
-        <Route path="/hotelBooked" element={<HotelBookings />} />
-        <Route path="/SignInWithGoogle" element={<SignInWithGoogle />} />
-        <Route path="/OTP" element={<OtpPage />} />
-        <Route path="/Notifications" element={<Notifications />} />
-        <Route path="/changePassword" element={<ChangePassword />} />
-        <Route path="/UserBooking" element={<UserBookingsRecord />} />
-        <Route path="/dashboard" element={<Dashboard />} />
-        <Route path="/userProfile" element={<UserProfile />} />
-        <Route path="/Bookings" element={<BookingOptions />} />
-        <Route path="/Favorites" element={<Favorites />} />
-        <Route path="/FamilyTour" element={<FamilyTour />} />
-        <Route path="/Blogs" element={<Blogs />} />
-        <Route path="/DiscountedTour" element={<DiscountedTours />} />
-        <Route path="/BookTour" element={<BookTour />} />
-        <Route path="/ContactUs" element={<ContactUs />} />
-        <Route path="/AllTransport" element={<AllTransport />} />
-        <Route path="/AllHotels" element={<AllHotels />} />
-        <Route path="/HotelRelRooms" element={<HotelRelRooms />} />
-        <Route path="/AllTours" element={<AllTours />} />
-        <Route path="/BookTransport" element={<BookTransport />} />
+    <div className="w-full h-auto overflow-hidden bg-white">
+      <Router>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/chatbot" element={<ChatBot />} />
+          <Route path="/CustomizeTours" element={<CustomizeTours />} />
+          <Route path="/HotelTicket" element={<HotelTicket />} />
+          <Route path="/hotelPayment" element={<HotelRequestBalance />} />
+          <Route
+            path="/TransportPayment"
+            element={<RequestTransportBalance />}
+          />
+          <Route path="/TransportTicket" element={<TransportTicket />} />
+          <Route path="/BookHotel" element={<BookHotel />} />
+          <Route path="/ViewBlog" element={<ViewBlog />} />
+          <Route path="/discountedTour" element={<DiscountedTours />} />
+          <Route path="/HoneyMoonPackages" element={<HoneyMoonPackages />} />
+          <Route path="/AllTransport" element={<AllTransport />} />
+          <Route path="/allRooms" element={<Room />} />
+          <Route path="/AllRoom" element={<AllRoom />} />
+          <Route path="/AllHotels" element={<AllHotels />} />
+          <Route path="/PersonalPackages" element={<PersonalPackage />} />
+          <Route path="/FamilyTours" element={<FamilyPackage />} />
+          <Route path="/AllTourPackages" element={<AllTourPackages />} />
+          <Route
+            path="/TransportPaymentDet"
+            element={<TransportPaymentDet />}
+          />
+          <Route path="/HotelPaymentDet" element={<HotelPaymentDet />} />
+          <Route path="/TourPaymentDet" element={<TourPaymentDet />} />
+          <Route
+            path="/TransportBookingDet"
+            element={<TransportBookingDet />}
+          />
+          <Route path="/HotelBookingDet" element={<HotelBookingDet />} />
+          <Route path="/TourBookingDet" element={<TourBookingDet />} />
+          <Route path="/ToursPayments" element={<TourPayments />} />
+          <Route path="/HotelsPayments" element={<HotelPayments />} />
+          <Route path="/TransportsPayments" element={<TransportPayments />} />
+          <Route path="/PaymentOptions" element={<PaymentOptions />} />
+          <Route path="/indOtp" element={<IndependentOTP />} />
+          <Route path="/UpdatePassword" element={<UpdatePassword />} />
+          <Route path="/ResetPassword" element={<ForgetPassword />} />
+          <Route path="/tourBooked" element={<TourBookings />} />
+          <Route path="/transportBooked" element={<TransportBookings />} />
+          <Route path="/hotelBooked" element={<HotelBookings />} />
+          <Route path="/SignInWithGoogle" element={<SignInWithGoogle />} />
+          <Route path="/OTP" element={<OtpPage />} />
+          <Route path="/Notifications" element={<Notifications />} />
+          <Route path="/changePassword" element={<ChangePassword />} />
+          <Route path="/UserBooking" element={<UserBookingsRecord />} />
+          <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/userProfile" element={<UserProfile />} />
+          <Route path="/Bookings" element={<BookingOptions />} />
+          <Route path="/Favorites" element={<Favorites />} />
+          <Route path="/FamilyTour" element={<FamilyTour />} />
+          <Route path="/Blogs" element={<Blogs />} />
+          <Route path="/DiscountedTour" element={<DiscountedTours />} />
+          <Route path="/BookTour" element={<BookTour />} />
+          <Route path="/ContactUs" element={<ContactUs />} />
+          <Route path="/AllTransport" element={<AllTransport />} />
+          <Route path="/AllHotels" element={<AllHotels />} />
+          <Route path="/HotelRelRooms" element={<HotelRelRooms />} />
+          <Route path="/AllTours" element={<AllTours />} />
+          <Route path="/BookTransport" element={<BookTransport />} />
 
-        <Route path="/BookTour" element={<BookTour />} />
-        <Route path="/TourBanner" element={<BookTourBanner />} />
-        <Route path="/signUp" element={<SignUpForm />} />
-        <Route path="/SignIn" element={<SignInForm />} />
-        <Route path="/LandingPage" element={<LandingPage />} />
-        <Route path="/StripeForm" element={<StripeMainForm />} />
-        <Route path="/requestBalance" element={<RequestBalance />} />
-        <Route path="/CheckoutForm" element={<CheckoutForm />} />
-        <Route path="/Confirmation" element={<Confirmation />} />
-        <Route path="/Ticket" element={<Ticket />} />
-        <Route path="/paymentConfirmation" element={<PaymentSuccess />} />
-      </Routes>
-    </Router>
+          <Route path="/BookTour" element={<BookTour />} />
+          <Route path="/TourBanner" element={<BookTourBanner />} />
+          <Route path="/signUp" element={<SignUpForm />} />
+          <Route path="/SignIn" element={<SignInForm />} />
+          <Route path="/LandingPage" element={<LandingPage />} />
+          <Route path="/StripeForm" element={<StripeMainForm />} />
+          <Route path="/requestBalance" element={<RequestBalance />} />
+          <Route path="/CheckoutForm" element={<CheckoutForm />} />
+          <Route path="/Confirmation" element={<Confirmation />} />
+          <Route path="/Ticket" element={<Ticket />} />
+          <Route path="/paymentConfirmation" element={<PaymentSuccess />} />
+        </Routes>
+      </Router>
+    </div>
   );
 }
 

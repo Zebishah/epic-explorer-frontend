@@ -83,9 +83,9 @@ const TourPackages = () => {
                 <button
                   type="button"
                   onClick={() => BookTour(tour._id)}
-                  className="w-[40%] hover:before:bg-red rounded-xl relative h-[50px] overflow-hidden bg-white px-3 text-[#3654ff] shadow-lg transition-all ease-in-out before:absolute before:bottom-0 before:left-0 before:top-0 before:z-0 before:h-full before:w-0 before:bg-[#206eff] hover:shadow-lg hover:shadow-white before:transition-all before:duration-500 hover:text-white hover:before:left-0 hover:before:w-full"
+                  className="lg:w-[40%] hover:before:bg-red rounded-xl relative lg:h-[50px] w-[10%] h-[20px] overflow-hidden bg-white px-3 text-[#3654ff] shadow-lg transition-all ease-in-out before:absolute before:bottom-0 before:left-0 before:top-0 before:z-0 before:h-full before:w-0 before:bg-[#206eff] hover:shadow-lg hover:shadow-white before:transition-all before:duration-500 hover:text-white hover:before:left-0 hover:before:w-full"
                 >
-                  <span className="relative z-10 text-lg text-radios">
+                  <span className="relative z-10 text-sm lg:text-lg text-radios">
                     Book Tour
                   </span>
                 </button>
@@ -97,7 +97,7 @@ const TourPackages = () => {
       <button
         type="button"
         onClick={seeMore}
-        className="w-[20%] hover:before:bg-red rounded-xl relative h-[50px] overflow-hidden border border-[#3654ff] bg-[#206eff] px-3 text-white shadow-lg transition-all duration-300 ease-in-out before:absolute before:bottom-0 before:left-0 before:top-0 before:z-0 before:h-full before:w-0 before:bg-white before:transition-all before:duration-500 hover:text-[#3654ff] hover:shadow-[#3654ff] hover:before:left-0 hover:before:w-full"
+        className="lg:w-[20%] w-[50%] hover:before:bg-red text-sm rounded-xl relative h-[50px] overflow-hidden border border-[#3654ff] bg-[#206eff] px-3 text-white shadow-lg transition-all duration-300 ease-in-out before:absolute before:bottom-0 before:left-0 before:top-0 before:z-0 before:h-full before:w-0 before:bg-white before:transition-all before:duration-500 hover:text-[#3654ff] hover:shadow-[#3654ff] hover:before:left-0 hover:before:w-full"
       >
         <span className="relative z-10 text-lg text-radios">See More</span>
       </button>
@@ -147,9 +147,9 @@ const TourPackages = () => {
                 <button
                   type="button"
                   onClick={() => BookTour(tour._id)}
-                  className="w-[40%] hover:before:bg-red rounded-xl relative h-[50px] overflow-hidden bg-white px-3 text-[#3654ff] shadow-lg transition-all ease-in-out before:absolute before:bottom-0 before:left-0 before:top-0 before:z-0 before:h-full before:w-0 before:bg-[#206eff] hover:shadow-lg hover:shadow-white before:transition-all before:duration-500 hover:text-white hover:before:left-0 hover:before:w-full"
+                  className="lg:w-[40%] hover:before:bg-red rounded-xl relative lg:h-[50px] w-[10%] h-[20px] overflow-hidden bg-white px-3 text-[#3654ff] shadow-lg transition-all ease-in-out before:absolute before:bottom-0 before:left-0 before:top-0 before:z-0 before:h-full before:w-0 before:bg-[#206eff] hover:shadow-lg hover:shadow-white before:transition-all before:duration-500 hover:text-white hover:before:left-0 hover:before:w-full"
                 >
-                  <span className="relative z-10 text-lg text-radios">
+                  <span className="relative z-10 text-sm lg:text-lg text-radios">
                     Book Tour
                   </span>
                 </button>
@@ -162,7 +162,7 @@ const TourPackages = () => {
       <button
         type="button"
         onClick={seeMore}
-        className="w-[20%] hover:before:bg-red rounded-xl relative h-[50px] overflow-hidden border border-[#3654ff] bg-[#206eff] px-3 text-white shadow-lg transition-all duration-300 ease-in-out before:absolute before:bottom-0 before:left-0 before:top-0 before:z-0 before:h-full before:w-0 before:bg-white before:transition-all before:duration-500 hover:text-[#3654ff] hover:shadow-[#3654ff] hover:before:left-0 hover:before:w-full"
+        className="lg:w-[20%] w-[50%] hover:before:bg-red text-sm rounded-xl relative h-[50px] overflow-hidden border border-[#3654ff] bg-[#206eff] px-3 text-white shadow-lg transition-all duration-300 ease-in-out before:absolute before:bottom-0 before:left-0 before:top-0 before:z-0 before:h-full before:w-0 before:bg-white before:transition-all before:duration-500 hover:text-[#3654ff] hover:shadow-[#3654ff] hover:before:left-0 hover:before:w-full"
       >
         <span className="relative z-10 text-lg text-radios">See More</span>
       </button>
