@@ -16,8 +16,8 @@ const OtherBookings = () => {
       <h1 className="flex items-center justify-center p-4 mx-auto text-3xl text-white bg-blue-600 rounded-lg shadow-lg w-max font-joining">
         Other Bookings
       </h1>
-      <div className="flex flex-col items-center justify-center h-auto space-y-6 lg:p-8">
-        <div className="relative border-2 border-[#3654ff] bg-gradient-to-r from-purple-600 to-blue-600 h-auto  text-white overflow-hidden w-[80%] rounded-xl shadow-lg shadow-fade-black">
+      <div className="flex flex-col items-center justify-center h-full space-y-6 lg:p-8">
+        <div className="relative border-2 border-[#3654ff] bg-gradient-to-r from-purple-600 to-blue-600 text-white overflow-hidden w-[80%] h-[40vh] rounded-xl shadow-lg shadow-fade-black">
           <div className="absolute inset-0 ">
             <img
               src={backgroundImage}
@@ -44,7 +44,7 @@ const OtherBookings = () => {
           </div>
         </div>
 
-        <div className="relative border-2 border-[#3654ff] bg-gradient-to-r from-purple-600 to-blue-600 h-auto text-white overflow-hidden w-[80%] rounded-xl shadow-lg shadow-fade-black">
+        <div className="relative border-2 border-[#3654ff] bg-gradient-to-r from-purple-600 to-blue-600 h-[40vh] text-white overflow-hidden w-[80%] rounded-xl shadow-lg shadow-fade-black">
           <div className="absolute inset-0">
             <img
               src={backgroundImage2}
