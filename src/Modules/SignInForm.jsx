@@ -51,7 +51,6 @@ const SignInForm = () => {
 
   return (
     <div className="flex h-screen">
-      <ToastContainer />
       <AboveNavbar />
       <div className="flex smd:w-1/2 justify-center items-center bg-[#3654ff] sssm:w-full">
         <form className="flex flex-col gap-y-4" onSubmit={handleSubmit}>
